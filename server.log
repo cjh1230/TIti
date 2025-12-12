@@ -1,0 +1,39 @@
+[2025-12-12 17:43:59] INFO: User added: admin (id=1000)
+[2025-12-12 17:43:59] INFO: User added: alice (id=1001)
+[2025-12-12 17:43:59] INFO: User added: bob (id=1002)
+[2025-12-12 17:43:59] INFO: User added: charlie (id=1003)
+[2025-12-12 17:43:59] INFO: Initialized default users
+[2025-12-12 17:43:59] INFO: Storage initialized
+[2025-12-12 17:43:59] INFO: Server starting...
+[2025-12-12 17:43:59] INFO: TCP server initialized on port 8080
+[2025-12-12 17:43:59] INFO: TCP server started, listening for connections...
+[2025-12-12 17:43:59] INFO: Event loop started
+[2025-12-12 17:44:19] INFO: New client connected: fd=5, IP=127.0.0.1:49438, total=1
+[2025-12-12 17:44:23] INFO: User authenticated: bob
+[2025-12-12 17:44:23] INFO: User authenticated successfully: bob (fd=5)
+[2025-12-12 17:44:23] INFO: User logged in successfully: bob (fd=5)
+[2025-12-12 17:44:39] INFO: Client disconnected: fd=5
+[2025-12-12 17:44:39] INFO: Event loop removed fd=5, remaining=0
+[2025-12-12 17:44:46] INFO: Received signal 2, shutting down server...
+[2025-12-12 17:44:46] INFO: Received signal 2, shutting down server...
+[2025-12-12 17:45:23] INFO: User added: admin (id=1000)
+[2025-12-12 17:45:23] INFO: User added: alice (id=1001)
+[2025-12-12 17:45:23] INFO: User added: bob (id=1002)
+[2025-12-12 17:45:23] INFO: User added: charlie (id=1003)
+[2025-12-12 17:45:23] INFO: Initialized default users
+[2025-12-12 17:45:23] INFO: Storage initialized
+[2025-12-12 17:45:23] INFO: Server starting...
+[2025-12-12 17:45:23] INFO: TCP server initialized on port 8080
+[2025-12-12 17:45:23] INFO: TCP server started, listening for connections...
+[2025-12-12 17:45:23] INFO: Event loop started
+[2025-12-12 17:45:41] INFO: New client connected: fd=5, IP=127.0.0.1:55560, total=1
+[2025-12-12 17:45:46] INFO: User authenticated: bob
+[2025-12-12 17:45:46] INFO: User authenticated successfully: bob (fd=5)
+[2025-12-12 17:45:46] INFO: User logged in successfully: bob (fd=5)
+[2025-12-12 17:45:52] WARNING: User alice is not online, cannot deliver message
+[2025-12-12 18:28:38] INFO: New client connected: fd=6, IP=127.0.0.1:54564, total=2
+[2025-12-12 18:28:57] INFO: User authenticated: alice
+[2025-12-12 18:28:57] INFO: User authenticated successfully: alice (fd=6)
+[2025-12-12 18:28:57] INFO: User logged in successfully: alice (fd=6)
+[2025-12-12 18:29:29] INFO: Private message delivered: alice -> bob
+[2025-12-12 18:29:56] INFO: Private message delivered: bob -> alice
