@@ -1,39 +1,34 @@
-[2025-12-12 17:43:59] INFO: User added: admin (id=1000)
-[2025-12-12 17:43:59] INFO: User added: alice (id=1001)
-[2025-12-12 17:43:59] INFO: User added: bob (id=1002)
-[2025-12-12 17:43:59] INFO: User added: charlie (id=1003)
-[2025-12-12 17:43:59] INFO: Initialized default users
-[2025-12-12 17:43:59] INFO: Storage initialized
-[2025-12-12 17:43:59] INFO: Server starting...
-[2025-12-12 17:43:59] INFO: TCP server initialized on port 8080
-[2025-12-12 17:43:59] INFO: TCP server started, listening for connections...
-[2025-12-12 17:43:59] INFO: Event loop started
-[2025-12-12 17:44:19] INFO: New client connected: fd=5, IP=127.0.0.1:49438, total=1
-[2025-12-12 17:44:23] INFO: User authenticated: bob
-[2025-12-12 17:44:23] INFO: User authenticated successfully: bob (fd=5)
-[2025-12-12 17:44:23] INFO: User logged in successfully: bob (fd=5)
-[2025-12-12 17:44:39] INFO: Client disconnected: fd=5
-[2025-12-12 17:44:39] INFO: Event loop removed fd=5, remaining=0
-[2025-12-12 17:44:46] INFO: Received signal 2, shutting down server...
-[2025-12-12 17:44:46] INFO: Received signal 2, shutting down server...
-[2025-12-12 17:45:23] INFO: User added: admin (id=1000)
-[2025-12-12 17:45:23] INFO: User added: alice (id=1001)
-[2025-12-12 17:45:23] INFO: User added: bob (id=1002)
-[2025-12-12 17:45:23] INFO: User added: charlie (id=1003)
-[2025-12-12 17:45:23] INFO: Initialized default users
-[2025-12-12 17:45:23] INFO: Storage initialized
-[2025-12-12 17:45:23] INFO: Server starting...
-[2025-12-12 17:45:23] INFO: TCP server initialized on port 8080
-[2025-12-12 17:45:23] INFO: TCP server started, listening for connections...
-[2025-12-12 17:45:23] INFO: Event loop started
-[2025-12-12 17:45:41] INFO: New client connected: fd=5, IP=127.0.0.1:55560, total=1
-[2025-12-12 17:45:46] INFO: User authenticated: bob
-[2025-12-12 17:45:46] INFO: User authenticated successfully: bob (fd=5)
-[2025-12-12 17:45:46] INFO: User logged in successfully: bob (fd=5)
-[2025-12-12 17:45:52] WARNING: User alice is not online, cannot deliver message
-[2025-12-12 18:28:38] INFO: New client connected: fd=6, IP=127.0.0.1:54564, total=2
-[2025-12-12 18:28:57] INFO: User authenticated: alice
-[2025-12-12 18:28:57] INFO: User authenticated successfully: alice (fd=6)
-[2025-12-12 18:28:57] INFO: User logged in successfully: alice (fd=6)
-[2025-12-12 18:29:29] INFO: Private message delivered: alice -> bob
-[2025-12-12 18:29:56] INFO: Private message delivered: bob -> alice
+[2025-12-12 20:45:47] INFO: User added: admin (id=1000)
+[2025-12-12 20:45:47] INFO: User added: alice (id=1001)
+[2025-12-12 20:45:47] INFO: User added: bob (id=1002)
+[2025-12-12 20:45:47] INFO: User added: charlie (id=1003)
+[2025-12-12 20:45:47] INFO: Initialized default users
+[2025-12-12 20:45:47] INFO: Storage initialized
+[2025-12-12 20:45:47] INFO: Server starting...
+[2025-12-12 20:45:47] INFO: TCP server initialized on port 8080
+[2025-12-12 20:45:47] INFO: TCP server started, listening for connections...
+[2025-12-12 20:45:47] INFO: Event loop started
+[2025-12-12 20:52:29] INFO: New client connected: fd=5, IP=192.168.3.12:38810, total=1
+[2025-12-12 20:53:04] INFO: New client connected: fd=6, IP=192.168.3.89:35140, total=2
+[2025-12-12 20:53:23] INFO: User authenticated: alice
+[2025-12-12 20:53:23] INFO: User authenticated successfully: alice (fd=5)
+[2025-12-12 20:53:23] INFO: User logged in successfully: alice (fd=5)
+[2025-12-12 20:54:09] WARNING: Authentication failed for user: bob
+[2025-12-12 20:54:09] WARNING: Authentication failed for user: bob
+[2025-12-12 20:54:09] WARNING: Login failed for user: bob (fd=6)
+[2025-12-12 20:54:54] WARNING: User bob is not online, cannot deliver message
+[2025-12-12 20:55:06] INFO: Client disconnected: fd=5
+[2025-12-12 20:55:06] INFO: Event loop removed fd=5, remaining=1
+[2025-12-12 20:55:50] INFO: New client connected: fd=5, IP=192.168.3.12:51850, total=2
+[2025-12-12 20:56:46] INFO: User authenticated: alice
+[2025-12-12 20:56:46] INFO: User authenticated successfully: alice (fd=5)
+[2025-12-12 20:56:46] INFO: User logged in successfully: alice (fd=5)
+[2025-12-12 20:57:09] INFO: User authenticated: bob
+[2025-12-12 20:57:09] INFO: User authenticated successfully: bob (fd=6)
+[2025-12-12 20:57:09] INFO: User logged in successfully: bob (fd=6)
+[2025-12-12 20:57:29] INFO: Private message delivered: bob -> alice
+[2025-12-12 21:19:31] INFO: Broadcast delivered: 1/2 users, from: alice
+[2025-12-12 21:25:16] INFO: Client disconnected: fd=5
+[2025-12-12 21:25:16] INFO: Event loop removed fd=5, remaining=1
+[2025-12-12 21:25:22] INFO: Client disconnected: fd=6
+[2025-12-12 21:25:22] INFO: Event loop removed fd=6, remaining=0

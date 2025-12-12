@@ -197,6 +197,10 @@ int ui_cmd_connect(AppClient *client, const char *cmd)
 		return 0;
 	}
 
+	/* 保存用户输入的服务器地址和端口到客户端实例 */
+	safe_strcpy(client->server_ip, ip, sizeof(client->server_ip));
+	client->server_port = port;
+
 	if (client_connect(client) == 0)
 	{
 		/* 启动接收线程，开始处理来自服务器的响应 */
