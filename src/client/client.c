@@ -27,12 +27,12 @@ static const char *response_message_text(const char *content)
 	}
 	//查找'|'符号 如果存在sep指向'|' 如果不存在sep为NULL
 	sep = strchr(content, '|');
-	
+	//如果sep存在 并且下一位不是\0 就返回下一位的地址
 	if (sep && *(sep + 1) != '\0')
 	{
 		return sep + 1;
 	}
-
+	//没找到 返回原字符串
 	return content;
 }
 
