@@ -20,13 +20,14 @@
 static const char *response_message_text(const char *content)
 {
 	const char *sep;
-
+	//如果传进来的形参为NULL 返回""空字符串
 	if (!content)
 	{
 		return "";
 	}
-
+	//查找'|'符号 如果存在sep指向'|' 如果不存在sep为NULL
 	sep = strchr(content, '|');
+	
 	if (sep && *(sep + 1) != '\0')
 	{
 		return sep + 1;
