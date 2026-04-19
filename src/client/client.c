@@ -48,7 +48,7 @@ static void client_emit_line(AppClient *client, const char *line)
 {
 	ClientMessageCallback callback = NULL;
 	void *userdata = NULL;
-
+	//空指针检查
 	if (!client)
 	{
 		return;
@@ -59,7 +59,7 @@ static void client_emit_line(AppClient *client, const char *line)
 	callback = client->message_callback;
 	userdata = client->message_callback_userdata;
 	platform_mutex_unlock(&client->state_lock);
-
+	
 	if (callback)
 	{
 		callback(userdata, line ? line : "");
